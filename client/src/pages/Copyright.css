@@ -1,0 +1,23 @@
+.copyrights {
+  text-align: center;
+}
+
+.copyrightTitle {
+  padding: 50px 0 30px 0;
+  font-weight: 400;
+  margin-top: 0;
+  color: black;
+}
+
+.copyrightH3 {
+  margin: 50px 0 30px 0;
+  font-family: "HP" sans-serif;
+}
+
+#JKR {
+  margin-bottom: 50px;
+}
+
+.apiLinks:visited {
+  color: black;
+}

@@ -1,0 +1,67 @@
+.notFound {
+  background-image: url("https://mrwallpaper.com/images/hd/marauders-map-from-harry-potter-bfysqiyu0x7liolg.jpg");
+  background-size: cover;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notFound h4 {
+  margin: 25px 0;
+  color: whitesmoke;
+  font-size: 2rem;
+}
+.notFound h3 {
+  margin: 20px 0 0px 0;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+.marauderButton {
+  background-color: #cb954b;
+  border: 2px solid #3f0d10;
+  border-radius: 30px;
+  box-shadow: #3f0d10 4px 4px 0 0;
+  color: #3f0d10;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-bottom: 20px;
+}
+
+.marauderButton:hover {
+  background-color: #3f0d10;
+  color: #cb954b;
+}
+
+.marauderButton:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .marauderButton {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+.backgroundDark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.538);
+  width: 50%;
+  align-items: center;
+  border-radius: 25px;
+}

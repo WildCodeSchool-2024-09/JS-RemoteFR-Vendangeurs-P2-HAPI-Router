@@ -1,0 +1,145 @@
+@font-face {
+  font-family: HP;
+  src: url(../assets/fonts/HarryPotter.ttf);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto 0 auto;
+  width: 90%;
+}
+
+#title {
+  font-family: HP, sans-serif;
+  color: #eeba30;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 400;
+  width: 45%;
+}
+
+li {
+  list-style: none;
+  font-size: 1.2rem;
+  color: #eeba30;
+}
+.wandPointer {
+  visibility: hidden;
+  font-size: 1.5rem;
+}
+
+li:hover {
+  .wandPointer {
+    visibility: visible;
+  }
+}
+
+#navSpells,
+#navCharacters,
+#navHome,
+#navChooseHouse {
+  text-decoration: none;
+  color: #eeba30;
+}
+
+.houseEmblem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+#houseEmblem {
+  width: 200px;
+  transition: transform 0.5s;
+}
+
+#houseEmblem:hover {
+  transform: scale(1.05);
+}
+
+.header-title {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .houseEmblem {
+    display: none;
+  }
+  .headerNav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.gryffindorHeader {
+  background: rgb(116, 0, 1);
+  background: linear-gradient(
+    0deg,
+    rgba(116, 0, 1, 1) 0%,
+    rgba(44, 44, 44, 1) 50%
+  );
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #navChooseHouse,
+  #title {
+    color: #eeba30;
+  }
+}
+
+.hufflepuffHeader {
+  background: rgb(236, 185, 57);
+  background: linear-gradient(
+    0deg,
+    rgba(236, 185, 57, 1) 0%,
+    rgba(44, 44, 44, 1) 50%
+  );
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #navChooseHouse {
+    color: #372e29;
+  }
+}
+
+.ravenclawHeader {
+  background: rgb(34, 47, 91);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 47, 91, 1) 0%,
+    rgba(44, 44, 44, 1) 50%
+  );
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #navChooseHouse {
+    color: #bebebe;
+  }
+}
+
+.slytherinHeader {
+  background: rgb(26, 71, 42);
+  background: linear-gradient(
+    0deg,
+    rgba(26, 71, 42, 1) 0%,
+    rgba(44, 44, 44, 1) 50%
+  );
+
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #navChooseHouse {
+    color: #aaaaaa;
+  }
+}
+
+.charactersTitle {
+  padding: 50px;
+}

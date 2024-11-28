@@ -1,0 +1,103 @@
+.charactersCards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px;
+  gap: 50px;
+}
+
+.characterCard {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(
+      0,
+      0,
+      0,
+      0.12
+    ) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 25px 25px 0 0;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#characterImage {
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  object-fit: cover;
+  max-height: 250px;
+}
+
+.characterBody {
+  padding: 8%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  color: #fbc926;
+  text-align: center;
+  transition: transform 0.3s;
+  transform: translateY(60%);
+  background-image: url(../assets/images/CardDefault.png);
+  background-size: cover;
+}
+
+.cardName {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.characterCardBody {
+  line-height: 27px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.patronus {
+  display: flex;
+  align-items: center;
+}
+
+.characterCard:hover .characterBody {
+  transform: translateY(0);
+}
+
+.characterPicture:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.characterCard:hover .characterCardBody {
+  opacity: 1;
+}
+
+.Gryffindor {
+  background-image: url(../assets/images/CardGryf.png);
+  background-size: cover;
+}
+
+.Slytherin {
+  background-image: url(../assets/images/CardSly.png);
+  background-size: cover;
+}
+.Hufflepuff {
+  background-image: url(../assets/images/CardHuff.png);
+  background-size: cover;
+}
+
+.Ravenclaw {
+  background-image: url(../assets/images/CardRav.png);
+  background-size: cover;
+}

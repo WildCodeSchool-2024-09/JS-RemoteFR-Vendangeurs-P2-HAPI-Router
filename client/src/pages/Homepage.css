@@ -1,0 +1,279 @@
+.homepage {
+  text-align: center;
+}
+
+@keyframes pageLoadEffect {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.content {
+  animation: pageLoadEffect 2s ease-out;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.titlesHP {
+  color: black;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.section {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fbc926;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.section1 {
+  margin-top: 70px;
+}
+
+.character-image {
+  margin: 10px 10px;
+  border-radius: 15px;
+  width: 150px;
+  height: 200px;
+}
+
+@media screen and (max-width: 992px) {
+  #ronImg,
+  #hermioneImg {
+    display: none;
+  }
+}
+
+.section .images-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section2 {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fbc926;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.center-button {
+  display: block;
+  margin: auto;
+  padding: 5px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #2c2c2c;
+  color: white;
+  text-decoration: none;
+}
+
+.section3 {
+  height: auto;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #fbc926;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-size: 11px;
+}
+
+.train-container {
+  text-align: center;
+}
+
+.train-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.train-title {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 8px rgb(0 0 0);
+  font-weight: 400;
+  margin: auto;
+  padding: 1em;
+}
+
+.center-button2 {
+  margin: 0px;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 3px 5px;
+  background-color: #060606;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.section4 {
+  background-image: url(../assets/images/train.png);
+  background-size: cover;
+  box-shadow: none;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 0;
+  justify-content: space-around;
+}
+.random-text-container {
+  position: relative;
+  height: 200px;
+  margin: 20px 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.random-text-container.hidden {
+  opacity: 0;
+}
+
+.random-text-container.visible {
+  opacity: 1;
+}
+
+.random-text {
+  position: absolute;
+  top: calc(100% * var(--random-top));
+  left: calc(100% * var(--random-left));
+  transform: translate(-50%, -50%);
+}
+
+.random-text:nth-child(1) {
+  --random-top: 0.1;
+  --random-left: 0.2;
+}
+.random-text:nth-child(2) {
+  --random-top: 0.3;
+  --random-left: 0.8;
+}
+.random-text:nth-child(3) {
+  --random-top: 0.6;
+  --random-left: 0.6;
+}
+.random-text:nth-child(4) {
+  --random-top: 0.7;
+  --random-left: 0.3;
+}
+.random-text:nth-child(5) {
+  --random-top: 0.9;
+  --random-left: 0.7;
+}
+.random-text:nth-child(6) {
+  --random-top: 0.2;
+  --random-left: 0.6;
+}
+.random-text:nth-child(7) {
+  --random-top: 0.4;
+  --random-left: 0.4;
+}
+.random-text:nth-child(8) {
+  --random-top: 0.6;
+  --random-left: 0.1;
+}
+
+@media screen and (min-width: 992px) {
+  .train-title {
+    font-size: 2rem;
+  }
+  .train-image {
+    min-height: 100px;
+    width: 100%;
+  }
+  .section4 {
+    padding: 0;
+    justify-content: space-around;
+  }
+}
+
+.gryffindor {
+  background-color: #740001;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #eeba30;
+  }
+}
+
+.hufflepuff {
+  background-color: #ecb939;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #372e29;
+  }
+}
+
+.ravenclaw {
+  background-color: #222f5b;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #bebebe;
+  }
+}
+
+.slytherin {
+  background-color: #1a472a;
+  #navHome,
+  #navCharacters,
+  #navSpells,
+  #title {
+    color: #aaaaaa;
+  }
+}
+
+.navlinks {
+  text-decoration: none;
+}
+
+.navlinks:visited {
+  color: inherit;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.returnHomeButton {
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  background-color: #eeba30;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.returnHomeButton:hover {
+  cursor: pointer;
+}
+
+#returnHome {
+  width: 200px;
+}
