@@ -1,7 +1,11 @@
-import "./ChooseHouseHome.css";
 import { useState } from "react";
+import Gryffindor from "../assets/images/Gryffindor.png";
+import Hufflepuff from "../assets/images/Hufflepuff.png";
+import Ravenclaw from "../assets/images/Ravenclaw.png";
+import Slytherin from "../assets/images/Slytherin.png";
 import Card from "../components/Card";
 import { useTheme } from "../context/theme";
+import "./ChooseHouseHome.css";
 
 function ChooseHouseHome() {
   const [changeColor, setChangeColor] = useState("");
@@ -23,7 +27,7 @@ function ChooseHouseHome() {
       <div className="card-container">
         {/* Gryffindor Card */}
         <Card
-          imageSrc="src/assets/images/Gryffindor.png"
+          imageSrc={Gryffindor}
           house="Gryffindor"
           description="Bravery & chivalry"
           onClick={() => handleChange("gryffindor")}
@@ -31,7 +35,7 @@ function ChooseHouseHome() {
 
         {/* Hufflepuff Card */}
         <Card
-          imageSrc="src/assets/images/Hufflepuff.png"
+          imageSrc={Hufflepuff}
           house="Hufflepuff"
           description="Loyalty & hard working"
           onClick={() => handleChange("hufflepuff")}
@@ -39,7 +43,7 @@ function ChooseHouseHome() {
 
         {/* Ravenclaw Card */}
         <Card
-          imageSrc="src/assets/images/Ravenclaw.png"
+          imageSrc={Ravenclaw}
           house="Ravenclaw"
           description="Wisdom wit & learning"
           onClick={() => handleChange("ravenclaw")}
@@ -47,7 +51,7 @@ function ChooseHouseHome() {
 
         {/* Slytherin Card */}
         <Card
-          imageSrc="src/assets/images/Slytherin.png"
+          imageSrc={Slytherin}
           house="Slytherin"
           description="Cunning & ambition"
           onClick={() => handleChange("slytherin")}
